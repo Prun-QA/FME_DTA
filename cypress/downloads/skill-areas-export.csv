@@ -1,0 +1,34 @@
+Id,Name,Description,Status,Provider,Enrollment,Total Course Count,Avg Performance,Beginner Modules Course Count,Advanced Modules Course Count,Intermediate Modules Course Count
+3a3f6b84-dafe-4b1b-bf41-9506eb73d6a7,Digital Learning Skill,Digital Learning Skill,ACTIVE,PLURALSIGHT,5,3,,1,1,1
+fec4498b-7f52-4337-afc8-5a99f7b900c9,ABC,ABC,ACTIVE,COURSERA,0,3,,1,1,1
+92edce78-7fd8-4537-9685-3f40cd17357e,Data Analytics VTG (PLURA),DATA,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+51659e20-0124-49d4-8413-8216c5673d84,Data Analytics GTI,DATA,ACTIVE,COURSERA,0,3,,1,1,1
+5f909dee-b130-4e9b-a2e1-bb1fb1c12a8d,Mechanical,Mech,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+2753bf08-59e9-4ea0-bb50-db4ed0aa8446,Agile Project Management Fundamentals,Agile Project Management Fundamentals,ACTIVE,PLURALSIGHT,18,3,,1,1,1
+784ad5ac-bb8e-4a0c-a85f-33657dfa9949,Test Threee,Test Threee,ACTIVE,COURSERA,0,3,,1,1,1
+f56697da-d7e8-4557-8d94-8b8e7a56e7a6,Test Five,Test Five,ACTIVE,COURSERA,0,3,,1,1,1
+93504206-3076-4b26-81a7-31a0c586bb9e,User Design,User design,ACTIVE,PLURALSIGHT,0,4,,1,1,2
+36ad6585-5d92-4070-9ddd-777920ece20d,Data Analysis 2,Data Analysis 2,ACTIVE,COURSERA,0,4,,1,1,2
+9bbe3138-f5da-493c-abd6-fafbbd11c843,Prod,Prod,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+474cd1e8-c7f5-4414-8b42-9aeeeb5a8c00,Testpod,test,ACTIVE,COURSERA,0,3,,1,1,1
+528e3884-3722-4899-8b40-9635178f2a85,Data Analytics,Data,ACTIVE,COURSERA,0,3,,1,1,1
+d85feebe-8eed-4364-b3f0-2453ca096f97,Agile Project Management,Agile Project Management,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+45bbedce-3311-4fbb-bd8a-5d6fe5495e1c,Testpod,Testpod for testing,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+b72826de-17eb-4a6f-bd0f-93cf15384536,Data Analysis,Data Analysis,ACTIVE,PLURALSIGHT,7,3,,1,1,1
+e9e54ad2-047b-47b5-8a34-0762e3d565e7,Cypress,Learn Cypress TDD,ACTIVE,COURSERA,0,3,,1,1,1
+2cc0a5b8-ebdc-409e-ad50-c91f1f1c6568,NestJs,This is a NestJs course,ACTIVE,COURSERA,0,4,,1,1,2
+1b547334-d72e-42e9-854c-41f9d3b227c0,NextJs,This is a NextJs course,ACTIVE,PLURALSIGHT,0,3,,1,1,1
+16c468da-6631-4c35-bc88-17ba12272f89,ReactJs,ReactJs tutorial course,ACTIVE,COURSERA,0,3,,1,1,1
+77575939-0b41-4b5e-8df1-427167bf4a10,AI Automation,AI Automation,ACTIVE,COURSERA,0,3,,1,1,1
+a3204493-0517-4e12-90a8-0abbb0351f9b,Technology One,Technology One,ACTIVE,COURSERA,1,3,,1,1,1
+3b1c895a-c70e-4530-9731-d925a22b46d3,Data Analysis,Data Analysis,ACTIVE,COURSERA,0,3,,1,1,1
+5e8daad2-9faf-4e2f-99b6-f71af9f67193,Quantum Computing,Deal stock guess everybody. Detail glass ahead not black. Just gun season maybe paper work apply.,ACTIVE,COURSERA,5,3,53.78125,2,1,0
+354d641f-a669-49d9-ab9e-8e2dba996321,Parallel Computing,Citizen everyone result million wish him government hair. Inside explain size idea discussion establish card.,ACTIVE,COURSERA,5,3,37.271428571428565,2,0,1
+b899be2c-bad4-48a9-bf4e-ebc406780878,FinTech,Indicate front sit. Industry number have operation. Street there staff computer leader.,ACTIVE,COURSERA,5,7,46.50076923076923,2,3,2
+d10a7bad-0fea-484d-af0f-4f025e51435e,Natural Language Processing,Rise morning involve thank quickly key usually. Chance have organization travel.,ACTIVE,COURSERA,5,5,63.06200000000001,1,2,2
+72ddeac0-9f96-434e-bf97-c0f4370f2a18,Connected Technologies,Such follow perform. Huge style speech it keep manage small cost. Moment former partner move everybody point.,ACTIVE,COURSERA,5,6,67.95809523809525,5,0,1
+4068902d-684a-4783-bd02-704f10671fb8,AI & Machine Learning,Better team lead decision drug. Hard specific Democrat cultural pass probably hear everyone. Perform coach few can former shake race.,ACTIVE,COURSERA,5,7,73.821,4,1,2
+c0ce16b5-d3e5-40d3-b635-4546b47d2d07,IT Automation,Bar hand miss stop finally attention traditional up. Specific newspaper good radio section home.,ACTIVE,COURSERA,5,3,53.40857142857142,1,2,0
+48eaa4ea-b195-4383-9c08-dafeb162b676,Proactive Security,High behavior consider skin western simply. Letter watch stay.,ACTIVE,COURSERA,7,6,65.4890909090909,1,2,3
+b954206d-3405-4a7d-87dc-888bd4b04e39,Cloud Technologies,Standard bar before few. Form now yet election big record.,ACTIVE,COURSERA,7,6,50.31923076923077,2,1,3
+6a27f8c7-dfa2-4b6e-bb6b-75a4ee6db171,Software Development Methodologies,Doctor another trouble term school. Represent beautiful none standard minute.,ACTIVE,COURSERA,24,17,58.63571428571427,4,6,7
