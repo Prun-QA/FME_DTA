@@ -1,6 +1,6 @@
 
 Feature: Programs test
-
+        
         Scenario: Verify user can perform operations on institution page
                 Given I am on the login page
                 Then I should see the login body
@@ -34,22 +34,31 @@ Feature: Programs test
                 Then I should see the institutions ratings header in the institutions table
                 Then I should see the institutions status header in the institutions table
                 Then I should see and be able to click on the institutions add button
-                Then I should see and be able to click on the add institution from the dropdown menu
-                Then I should be redirected to the add institution page
-                Then I should see and be able to click on the select an institution field
-                Then I should see the institution name input field
-                Then I should see the description textarea field
-                Then I should see the institution location textarea field
-                Then I should see the institution email input field
-                Then I should see the institution phone number input field
-                Then I should see the institution website input field
-                Then I should see the institution accreditation number input field
-                Then I should see the institution accreditation date input field
-                Then I should see institution logo upload button
-                Then I should see the institution submit button
-                Then I should see the institution cancel button
-                When I click on the institution cancel button
+                When I click on the add institution from the dropdown menu
+                Then I should see the add new institution header on the add institution page
+                When I click on the institution type dropdown field
+                Then I should be able to select an institution type from the institution type dropdown
+                Then I should be able to type an institution name in the institution name input field
+                Then I should be able to type an institution description in the institution description textarea field
+                When I click on the select a state dropdown field
+                Then I should be able to select a state from the state dropdown field
+                Then I should be able to type in location in the institution location input field
+                Then I should be able to type in the institution email in the institution email input field
+                Then I should be able to type in the institution phone number in the institution phone number input field
+                Then I should be able to type in the institution website in the institution website input field
+                Then I should be able to type in the institution accreditation number in the institution accreditation number input field
+                # When I click on the accreditation date calendar date picker field
+                Then I should be able to select accreditation date from the calendar date picker field
+                When I click on the established year dropdown field
+                Then I should be able to select an established year from the established year dropdown field
+                When I click on the upload image icon
+                Then I should be able to select an institution image from the file explorer
+                # Then I should see add institution button enabled
+                When I click on the add institution button
+                Then I should a success message indicating institution added successfully
+                When I click on the okay thanks button on the success message
                 Then I should be redirected back to the institutions page
+                # Then I should see the newly added institution in the institutions table
                 Then I should see and be able to click on the institution next page button
                 Then I should see and be able to click on the institution previous page button
                 Then I should be able to click and select 100 on the rows per page dropdown
@@ -65,7 +74,7 @@ Feature: Programs test
                 Then I should see the toggle password visibility button
                 Then I should see the forgot password link
                 Then I should see the login button
-
+        
         Scenario: Verify user can perform operations on skill areas page
                 Given I am on the login page
                 Then I should see the login body
@@ -98,18 +107,27 @@ Feature: Programs test
                 Then I should see atleast 1 header column in the skill areas table
                 Then I should see atleast 1 data cell in the skill areas table
                 Then I should see content in the first data cell of the skill areas table
-                Then I should see and be able to click on the skill areas add button
+                When I click on the add new skill area button
                 Then I should see the add skill area modal headers
-                Then I should see the skill area name input field
-                Then I should see the skill area platform dropdown field
-                Then I should see the skill area description textarea field
-                Then I should see the skill area add beginner course button
-                Then I should see the skill area add intermediate course button
-                Then I should see the skill area add advanced course button
-                Then I should see the skill area save button
+                Then I should be able to type in the skill area name input field
+                When I click on the skill area platform dropdown field
+                Then I should be able to select a platform from the skill area platform dropdown field
+                Then I should be able to type in the skill area description textarea field
+                When I click on the skill area add beginner course button
+                Then I click on the search for courses here button
+                Then I should be able to select a beginner course from the dropdown field
+                When I click on the skill area add intermediate course button
+                Then I click on the search for courses here button again for intermediate course
+                Then I should be able to select an intermediate course from the dropdown field
+                When I click on the skill area add advanced course button
+                Then I click on the search for courses here button again for advanced course
+                Then I should be able to select an advanced course from the dropdown field
                 Then I should see the skill area cancel button
-                When I click on the skill area cancel button
-                Then I should be redirected back to the skill areas page
+                Then I should see the skill area save button
+                When I click on the skill area save button
+                Then I should see a success message indicating skill area added successfully
+                When I click on the okay thanks button on the success message
+                Then I should see the newly added skill area in the skill areas table
                 Then I should see and be able to click on the skill areas next page button
                 Then I should see and be able to click on the skill areas previous page button
                 Then I should be able to click and select 100 on the rows per page dropdown on skill areas
@@ -125,7 +143,7 @@ Feature: Programs test
                 Then I should see the toggle password visibility button
                 Then I should see the forgot password link
                 Then I should see the login button
-        
+
         Scenario: Verify user can perform operations on questions page
                 Given I am on the login page
                 Then I should see the login body
@@ -201,7 +219,7 @@ Feature: Programs test
                 Then I should see the toggle password visibility button
                 Then I should see the forgot password link
                 Then I should see the login button
-        
+        @only
         Scenario: Verify user can perform operations on pre-assessment page
                 Given I am on the login page
                 Then I should see the login body
@@ -221,6 +239,19 @@ Feature: Programs test
                 Then I should see preassessment dashboard header
                 Then I should see and be able to click on the preassessment export button
                 Then I should see the preassessment add new batch button
+                When I click on the preassessment add new batch button
+                Then I should see and fill the preassessment title field
+                Then I should see and fill the preassessment duration field
+                Then I should see and fill the preassessment psychometric questions count field
+                Then I should see and fill the preassessment skill assessment questions count field
+                Then I should see and fill the preassessment intermediate score from field
+                Then I should see and fill the preassessment intermediate score to field
+                Then I should see and fill the preassessment advanced score from field
+                Then I should see and fill the preassessment advanced score to field
+                When I click on the save batch button on the add preassessment batch form
+                Then I should see a success message indicating preassessment batch added successfully
+                When I click on the okay thanks button on the success messages
+                Then I should be redirected back to the preassessment landing page
                 Then I should see the preassessment search input field
                 When I click and type a non-existing batch name in the preassessment search input field
                 Then I should see a message indicating no results found on the preassessment page

@@ -89,6 +89,25 @@ Scenario: Verify user can perform operations on facilitators page
         Then I should see the facilitators dashboard heading
         Then I should see and be able to click the facilitators export button
         Then I should see the add facilitators button
+        When I click on the add facilitators button
+        Then I should see the invite new facilitator header
+        Then I should fill facilitators first name input field
+        Then I should fill facilitators middle name input field
+        Then I should fill facilitators last name input field
+        Then I should fill facilitators description input field
+        Then I should fill facilitators email input field
+        Then I should fill facilitators phone number input field
+        When I click on the institution dropdown field
+        Then I should be able to select an institution from the dropdown field
+        When I click on the training center dropdown field
+        Then I should be able to select a training center from the dropdown field
+        Then I should see the facilitators discard invite button
+        Then I should see the facilitators send button
+        When I click on the facilitators send button
+        Then I should see a success message indicating invite sent successfully
+        Then I should see and be able to click on the okay thanks button in the success message on the facilitators invite page
+        Then I should be redirected back to the facilitators page again
+        Then I should see the new facilitator in the list
         Then I should see the search input field on the facilitators page
         When I click and type a non existing facilitators
         Then I should see a message indicating no results found
@@ -135,7 +154,7 @@ Scenario: Verify user can perform operations on facilitators page
         When I click on the facilitator update details button
         Then I should see a success message indicating details updated successfully
         Then I should see and be able to click on the okay thanks button in the success message
-        Then I should be redirected back to the facilitators page again
+        Then I should be redirected back to the facilitators page yet again
         When I click on the profile tab
         Then I should see the logout option in the dropdown menu
         When I click on the logout option
@@ -165,6 +184,26 @@ Scenario: Verify user can perform operations on mentors page
         Then I should see the mentors dashboard heading
         Then I should see and be able to click the mentors export button
         Then I should see the add mentors button
+        When I click on the add mentors button
+        Then I should see the invite new mentor header
+        Then I should fill mentors first name input field
+        Then I should fill mentors middle name input field
+        Then I should fill mentors last name input field
+        Then I should fill mentors description input field
+        Then I should fill mentors email input field
+        Then I should fill mentors phone number input field
+        When I click on the mentors institution dropdown field
+        Then I should be able to search for an institution
+        Then I should be able to select an institution from the dropdown field on the mentors invite page
+        When I click on the mentors training center dropdown field
+        Then I should be able to select a training center from the dropdown field on the mentors invite page
+        Then I should see the mentors discard invite button
+        Then I should see the mentors send invite button
+        When I click on the mentors send invite button
+        Then I should see a success message indicating invitation sent successfully on the mentors invite page
+        Then I should see and be able to click on the okay thanks button in the success message on the mentors invite page
+        Then I should be redirected back to the mentors page again
+        Then I should see the new mentor in the list
         Then I should see the search input field on the mentors page
         When I click and type a non existing mentor
         Then I should see a message indicating no results found
@@ -221,19 +260,6 @@ Scenario: Verify user can perform operations on mentors page
         Then I should see a mentors success message indicating details updated successfully
         Then I should see and be able to click on the okay thanks button in the success message
         Then I should be redirected back to the mentors page again
-        When I click on the add mentors button
-        Then I should see the invite new mentor header
-        Then I should see mentors first name input field
-        Then I should see mentors middle name input field
-        Then I should see mentors last name input field
-        Then I should see mentors email input field
-        Then I should see mentors phone number input field
-        Then I should see mentors description input field
-        Then I should see the administrative details section
-        Then I should see the mentors send invite button
-        Then I should see the mentors discard button
-        When I click on the mentors discard button
-        Then I should be redirected back to the mentors page again
         When I click on the profile tab
         Then I should see the logout option in the dropdown menu
         When I click on the logout option
@@ -243,7 +269,7 @@ Scenario: Verify user can perform operations on mentors page
         Then I should see the toggle password visibility button
         Then I should see the forgot password link
         Then I should see the login button
-
+@only
 Scenario: Verify user can perform operations on admissions queue page
         Given I am on the login page
         Then I should see the login body
