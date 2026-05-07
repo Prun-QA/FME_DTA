@@ -269,7 +269,7 @@ Scenario: Verify user can perform operations on mentors page
         Then I should see the toggle password visibility button
         Then I should see the forgot password link
         Then I should see the login button
-@only
+
 Scenario: Verify user can perform operations on admissions queue page
         Given I am on the login page
         Then I should see the login body

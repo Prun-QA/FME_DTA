@@ -1,5 +1,4 @@
 Feature: Operations test
-    @only
     Scenario: Verify user can perform operations on sessions page
         Given I am on the login page
         Then I should see the login body

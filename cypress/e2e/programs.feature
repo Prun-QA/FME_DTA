@@ -219,7 +219,7 @@ Feature: Programs test
                 Then I should see the toggle password visibility button
                 Then I should see the forgot password link
                 Then I should see the login button
-        @only
+        
         Scenario: Verify user can perform operations on pre-assessment page
                 Given I am on the login page
                 Then I should see the login body
