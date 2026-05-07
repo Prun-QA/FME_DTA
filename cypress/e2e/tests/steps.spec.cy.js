@@ -1082,7 +1082,7 @@ Then('I should see the skill area save button', () => {
     cy.get(fmeDta.saveSkillsAreaButton).should('be.visible');
 })
 When('I click on the skill area save button', () => {
-    cy.contains('Save Skill Area', { timeout: 10000 }).click();
+    cy.get(fmeDta.saveSkillsAreaButton).click();
 })
 Then('I should see a success message indicating skill area added successfully', () => {
     cy.contains('Skill Area Created Successfully').should('be.visible');

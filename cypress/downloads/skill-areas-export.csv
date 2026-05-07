@@ -1,4 +1,6 @@
 Id,Name,Description,Status,Provider,Enrollment,Total Course Count,Avg Performance,Beginner Modules Course Count,Advanced Modules Course Count,Intermediate Modules Course Count
+bc2ee6de-d987-4b15-ab57-bbd34d78ed08,Agile Fundamentals,Agile Fundamentals,ACTIVE,COURSERA,0,7,,3,2,2
+e176b28c-d776-47fb-b1d6-d2011b072a2d,vulnero urbanus crustulum,Ustulo verto bibo suppono varius cena cibus deinde tenuis varietas.,DISABLE,PLURALSIGHT,0,3,,1,1,1
 d6de4f8b-cd19-421f-b5ee-5c9b9b371583,celo ver amor,Testimonium acer atavus inflammatio conitor arguo stillicidium.,ACTIVE,PLURALSIGHT,0,3,,1,1,1
 5b524232-0b7c-40f6-9d56-26ee7d2eae0b,tumultus claro vulnus,Supellex validus cupiditate sophismata sequi confugo aeternus coaegresco ara creta.,ACTIVE,PLURALSIGHT,0,3,,1,1,1
 7891e122-77ea-4167-95d1-b73e5c599e9f,anser tardus amor,Caterva timor demoror vester demergo clarus adeo caput votum amiculum.,ACTIVE,PLURALSIGHT,0,3,,1,1,1
@@ -40,4 +42,4 @@ d10a7bad-0fea-484d-af0f-4f025e51435e,Natural Language Processing,Rise morning in
 c0ce16b5-d3e5-40d3-b635-4546b47d2d07,IT Automation,Bar hand miss stop finally attention traditional up. Specific newspaper good radio section home.,ACTIVE,COURSERA,5,3,53.40857142857142,1,2,0
 48eaa4ea-b195-4383-9c08-dafeb162b676,Proactive Security,High behavior consider skin western simply. Letter watch stay.,ACTIVE,COURSERA,7,6,65.4890909090909,1,2,3
 b954206d-3405-4a7d-87dc-888bd4b04e39,Cloud Technologies,Standard bar before few. Form now yet election big record.,ACTIVE,COURSERA,7,6,50.31923076923077,2,1,3
-6a27f8c7-dfa2-4b6e-bb6b-75a4ee6db171,Software Development Methodologies,Doctor another trouble term school. Represent beautiful none standard minute.,ACTIVE,COURSERA,26,17,58.63571428571427,4,6,7
+6a27f8c7-dfa2-4b6e-bb6b-75a4ee6db171,Software Development Methodologies,Doctor another trouble term school. Represent beautiful none standard minute.,ACTIVE,COURSERA,27,17,58.63571428571427,4,6,7
