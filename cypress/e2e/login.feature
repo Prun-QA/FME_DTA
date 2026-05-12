@@ -1,7 +1,7 @@
 
 Feature: Login Test
 
-    Scenario: Verify user can login with valid credentials
+    Scenario: Verify user can successfully login with valid credentials
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -25,7 +25,7 @@ Feature: Login Test
         Then I should see the login button
 
 
-    Scenario: Verify user cannot login with invalid credentials
+    Scenario: Verify user cannot login succesfully with invalid credentials
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message

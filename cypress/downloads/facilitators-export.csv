@@ -1,4 +1,10 @@
 Id,Rating,Description,Students Count,Email,Status,Training Center,Last Active,Institution,Name
+b70b626f-6730-4f54-9dae-7e5035b3da4a,0.0,Facilitator for Cypress Testing,0,lue.hansen@yahoo.com,DISABLED,Lekki,2026-05-12T12:57:12.448609+00:00,Lekki uni,Eda White
+f3b6ebd4-15a0-4d1c-87ab-695cbcd945e9,0.0,Facilitator for Cypress Testing,0,william4@hotmail.com,DISABLED,Lekki,2026-05-12T12:52:58.027001+00:00,Lekki uni,Bell Fisher
+0c442c10-a6f7-4a16-babc-d45ea6ca093b,0.0,Facilitator for Cypress Testing,0,rufus_kuvalis76@gmail.com,DISABLED,Lekki,2026-05-12T12:49:34.319075+00:00,Lekki uni,Trevion Rath
+8b401162-50e1-4f23-91f8-29e474fb8baa,0.0,Facilitator for Cypress Testing,0,shelia66@hotmail.com,DISABLED,Lekki,2026-05-12T12:48:01.872114+00:00,Lekki uni,Anibal Ratke
+96192ebc-f257-47a0-bcfa-83e651410b72,0.0,teacher,0,alabi.olamonday2@gmail.com,ACTIVE,AAA,2026-05-08T15:03:44.763818+00:00,Wilderman and Son,Nonso inya
+94501a77-d93e-4762-a307-b574bc612054,0.0,Facilitator for Cypress Testing,0,debbie72@yahoo.com,DISABLED,Lekki,2026-05-07T13:30:51.008266+00:00,Lekki uni,Torrance Wisoky
 bbc8641e-e622-4a8c-accc-5a19b15f00a2,0.0,Facilitator for Cypress Testing,0,karelle.jenkins@gmail.com,DISABLED,Lekki,2026-05-07T13:27:38.256450+00:00,Lekki uni,Josh Willms
 b72809a3-9583-4e12-ab9a-b56a287b6e7c,0.0,Facilitator for Cypress Testing,0,ariel8@hotmail.com,DISABLED,Lekki,2026-05-01T18:23:24.068387+00:00,Lekki uni,Clarence Kshlerin
 e6709076-b0b6-442a-b5f7-02208f9bcfc3,0.0,Facilitator for Cypress Testing,0,yolanda4@yahoo.com,DISABLED,Lekki,2026-05-01T18:21:31.015525+00:00,Lekki uni,Carlton Runte
@@ -6,7 +12,6 @@ e6709076-b0b6-442a-b5f7-02208f9bcfc3,0.0,Facilitator for Cypress Testing,0,yolan
 8645f43c-8ac1-4718-aa5e-dfe0bb5f41ce,0.0,Facilitator for Cypress Testing,0,randal.price93@hotmail.com,DISABLED,Lekki,2026-05-01T18:12:36.005750+00:00,Lekki uni,Christie Buckridge
 3346597f-5ab0-4bb6-b298-d3c06ee09935,0.0,Facilitator for Cypress Testing,0,mauricio.romaguera-dooley@yahoo.com,DISABLED,Lekki,2026-05-01T18:11:40.777275+00:00,Lekki uni,Myrtis Fritsch
 78a58d4f-5c5a-41e6-bc90-d293c35d517b,0.0,Facilitator for Cypress Testing,0,meredith.schmeler69@gmail.com,DISABLED,Lekki,2026-05-01T18:09:40.914997+00:00,Lekki uni,Jacqueline Ortiz
-96192ebc-f257-47a0-bcfa-83e651410b72,0.0,teacher,0,alabi.olamonday2@gmail.com,DISABLED,AAA,2026-04-22T13:09:42.344400+00:00,Wilderman and Son,Nonso inya
 f370ecfb-bb94-43aa-ab42-7252abdd190e,0.0,Description,0,amakaifende@yopmail.com,DISABLED,University of Abuja,2026-04-22T13:03:08.998255+00:00,University of Abuja,Amaka Ify
 655a4056-0df9-4340-b32f-d0ac038e87b3,0.0,Olodo of africa,0,olodo@yopmail.com,DISABLED,AAA,2026-04-22T12:46:07.535431+00:00,Wilderman and Son,Olodo olodo
 dbdd37ef-c27f-48d2-b276-2c97a6aad43d,0.0,Mark,0,westmark@yopmail.com,DISABLED,AAA,2026-04-22T12:45:55.301245+00:00,Wilderman and Son,Mark West
@@ -24,7 +29,6 @@ d0598c2b-e120-4652-b6dd-3f12e4a5e6c3,0.0,Facilitator for Cypress Testing,0,katly
 f0a9014b-4fdc-4880-aae1-c83ee6ffd8bc,0.0,Boss,0,ednut@yopmail.com,ACTIVE,OSUN Training Center 137,2026-02-26T08:25:42.315402+00:00,Jacobs-Williams University 51,Tunde Ednut
 adfab28d-070c-40ca-9203-e41e5238f627,0.0,Fac,0,nonsoinya@gmail.com,DISABLED,Rumu center,2026-02-24T11:12:45.809293+00:00,University of Rumur,Nonso Stephen
 4ec25090-6354-4e18-8d89-9a757e7cbef8,0.0,Facilitator,0,johnsmith@yopmail.com,DISABLED,Rumu center,2026-02-24T11:10:09.663314+00:00,University of Rumur,John Smith
-bf95a6b8-58fb-481c-856a-34c7a7a8287d,0.0,fixing ui,0,alabi.olamonday2+2@gmail.com,DISABLED,Auchi Centre 2,2026-02-09T12:35:15.033111+00:00,Auchi College of Technology,olaide alabi
 b0db9b4b-0de8-40dd-a649-603f60350a6d,0.0,A good teacher,0,blake@yopmail.com,DISABLED,OGUN Training Center 167,2026-02-04T20:34:19.019493+00:00,"Garrison, Bailey and Stephens Polytechnic 49",Blake Timo
 a5573bf7-7203-4802-9384-94dde466769e,0.0,Prof,0,tochukwu@yopmail.com,ACTIVE,YOBE Training Center 174,2026-02-04T09:33:44.368685+00:00,Collins Inc University 57,Williams Tochukwu
 b12dd6e7-b005-4cce-a3ae-db94ffa07258,0.0,Tutor,0,stephen@yopmail.com,DISABLED,National open University Nsuka Training center 2,2026-01-21T12:49:52.007871+00:00,University,Don Williams

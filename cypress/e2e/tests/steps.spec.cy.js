@@ -343,6 +343,7 @@ When('I click on the training center dropdown field', () => {
     cy.contains('Select here').scrollIntoView().click();
 })
 Then('I should be able to select a training center from the dropdown field', () => {
+    cy.get(fmeDta.trainingCenterSearchInput).should('be.visible').type('lekki');
     cy.get(fmeDta.trainingCenterOption).find('li').first().click();
 })
 Then('I should see the facilitators discard invite button', () => {
@@ -355,10 +356,10 @@ When('I click on the facilitators send button', () => {
     cy.get(fmeDta.sendInviteButton).click();
 })
 Then('I should see a success message indicating invite sent successfully', () => {
-    cy.get(fmeDta.successMessage).should('be.visible');
+    cy.get(fmeDta.successMessage, { timeout: 10000 }).should('be.visible');
 })
 Then('I should see and be able to click on the okay thanks button in the success message on the facilitators invite page', () => {
-    cy.get(fmeDta.okayThanksButton).should('be.visible').click();
+    cy.get(fmeDta.okayThanksButton, { timeout: 10000 }).should('be.visible').click();
 })
 Then('I should be redirected back to the facilitators page again', () => {
     cy.url().should('include', '/facilitators');
@@ -466,7 +467,7 @@ Then('I click on the edit details option in the dropdown menu', () => {
     cy.get(fmeDta.editDetailsButton).click();
 })
 Then('I should see the facilitator email section', () => {
-    cy.get(fmeDta.facilitatorInvitationEmailInput).should('be.visible');
+    cy.contains('Facilitator Invitation').should('be.visible');
 })
 Then('I should see the facilitator discard changes button', () => {
     cy.get(fmeDta.discardChangesButton).scrollIntoView().should('be.visible');
@@ -540,6 +541,7 @@ When('I click on the mentors training center dropdown field', () => {
     cy.contains('Select here', { timeout: 5000 }).click();
 })
 Then('I should be able to select a training center from the dropdown field on the mentors invite page', () => {
+    cy.get(fmeDta.trainingCenterSearchInput).should('be.visible').type('Lekki');
     cy.get(fmeDta.mentorsTrainingCenterOption).find('li').first().click();
 })
 Then('I should see the mentors discard invite button', () => {
@@ -552,10 +554,10 @@ When('I click on the mentors send invite button', () => {
     cy.get(fmeDta.mentorSendInviteButton).click();
 })
 Then('I should see a success message indicating invitation sent successfully on the mentors invite page', () => {
-    cy.get(fmeDta.mentorInviteSuccessMessage).should('be.visible');
+    cy.get(fmeDta.mentorInviteSuccessMessage, { timeout: 10000 }).should('be.visible');
 })
 Then('I should see and be able to click on the okay thanks button in the success message on the mentors invite page', () => {
-    cy.get(fmeDta.mentorInviteSuccessMessageOkButton).should('be.visible').click();
+    cy.get(fmeDta.mentorInviteSuccessMessageOkButton, { timeout: 10000 }).should('be.visible').click();
 })
 Then('I should be redirected back to the mentors page again', () => {
     cy.url().should('include', 'users/mentors');

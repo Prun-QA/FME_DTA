@@ -66,7 +66,7 @@
     "studentDetailsTab": "section[class='w-[calc(100%-400px)] rounded-2xl flex flex-col gap-5'] section:nth-child(1)",
     "schedulesTab": "section[class='w-[calc(100%-400px)] rounded-2xl flex flex-col gap-5'] section:nth-child(1)",
     "facilitatorProfileBackButton": "span[class='font-medium']",
-    "editDetailsButton": "div[class='relative flex justify-center'] div",
+    "editDetailsButton": ".lucide.lucide-pencil-line.size-4",
     "editDetailsModal": "h2[class='text-lg font-medium-custom text-[var(--title-color)]']",
     "facilitatorInvitationEmailInput": "div[class='p-3 rounded-lg border border-blue-300 text-blue-600 bg-blue-100 flex gap-2 items-start text-sm'] div",
     "updateFacilitatorButton": "div[class='flex items-center gap-2'] button[title='Update Facilitator'] span",
@@ -399,7 +399,8 @@
     "mentorInviteSuccessMessage":"#feedback-dialog-title",
     "mentorInviteSuccessMessageOkButton":"button[title='Okay, Thanks']",
     "uploadImageIcon":"button[class='flex items-center gap-2 px-4 py-2.5 text-sm cursor-pointer font-medium text-gray-700 border border-[#E5E7EB] rounded-lg hover:bg-gray-50 transition-colors']",
-    "addAnInstitutionButton":"button[class='flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors rounded-t-lg'] span"
+    "addAnInstitutionButton":"button[class='flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors rounded-t-lg'] span",
+    "trainingCenterSearchInput":"input[placeholder='Search...']"
     
 
 }

@@ -1,7 +1,7 @@
 
 Feature: Programs test
         
-        Scenario: Verify user can perform operations on institution page
+        Scenario: Verify user can navigate through the institutioin page, view all available institution and there details, export, and add new institution
                 Given I am on the login page
                 Then I should see the login body
                 Then I should see a welcome message
@@ -75,7 +75,7 @@ Feature: Programs test
                 Then I should see the forgot password link
                 Then I should see the login button
         
-        Scenario: Verify user can perform operations on skill areas page
+        Scenario: Verify user can navigate through the skill area page, view the available skill area on the table, export, and add new skill area
                 Given I am on the login page
                 Then I should see the login body
                 Then I should see a welcome message
@@ -144,7 +144,7 @@ Feature: Programs test
                 Then I should see the forgot password link
                 Then I should see the login button
 
-        Scenario: Verify user can perform operations on questions page
+        Scenario: Verify user can through the question page, view the total count of psychometric, and skill assessment questions, and view there details
                 Given I am on the login page
                 Then I should see the login body
                 Then I should see a welcome message
@@ -220,7 +220,7 @@ Feature: Programs test
                 Then I should see the forgot password link
                 Then I should see the login button
         
-        Scenario: Verify user can perform operations on pre-assessment page
+        Scenario: Verify user can verify user can navigate through the pre assessments page, view the available batchs, export, and add new batch
                 Given I am on the login page
                 Then I should see the login body
                 Then I should see a welcome message

@@ -1,7 +1,7 @@
 
 Feature: Users Test
 
-    Scenario: Verify user can perform operations on learners page
+    Scenario: Verify user can navigate through learners page, view learners details from coursera and pluralsight and export learners
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -71,7 +71,7 @@ Feature: Users Test
         Then I should see the forgot password link
         Then I should see the login button
 
-Scenario: Verify user can perform operations on facilitators page
+Scenario: Verify user can navigate through facilitators page, view all facilitators, export, and add new facilitator
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -165,7 +165,7 @@ Scenario: Verify user can perform operations on facilitators page
         Then I should see the forgot password link
         Then I should see the login button
 
-Scenario: Verify user can perform operations on mentors page
+Scenario: Verify user can navigate through mentors page, view all mentors, export, and add new mentor
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -270,7 +270,7 @@ Scenario: Verify user can perform operations on mentors page
         Then I should see the forgot password link
         Then I should see the login button
 
-Scenario: Verify user can perform operations on admissions queue page
+Scenario: Verify user can navigate through admission queue page, export, and view all students on the admission queue
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message

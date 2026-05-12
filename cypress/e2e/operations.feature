@@ -1,5 +1,5 @@
 Feature: Operations test
-    Scenario: Verify user can perform operations on sessions page
+    Scenario: Verify user can navigate through the session page, view all available session and export session
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -55,7 +55,7 @@ Feature: Operations test
         Then I should see the forgot password link
         Then I should see the login button
    
-   Scenario: Verify user can perform operations on audit log page
+   Scenario: Verify user can navigate through the audit log page, view all logs on the table, and export audit log page
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
@@ -100,7 +100,7 @@ Feature: Operations test
         Then I should see the forgot password link
         Then I should see the login button
 
-   Scenario: Verify user can perform operations on the messages page
+   Scenario: Verify user can navigate through the message page, view all message, view unread message, and group message
         Given I am on the login page
         Then I should see the login body
         Then I should see a welcome message
