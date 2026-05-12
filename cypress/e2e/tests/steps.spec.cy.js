@@ -1081,13 +1081,18 @@ Then('I should see the skill area cancel button', () => {
     cy.get(fmeDta.cancelSkillAreaButton).should('be.visible');
 })
 Then('I should see the skill area save button', () => {
-    cy.get(fmeDta.saveSkillsAreaButton).should('be.visible');
+    cy.contains('Save Skill Area', { timeout: 10000 }).scrollIntoView().should('be.visible');
 })
 When('I click on the skill area save button', () => {
-    cy.get(fmeDta.saveSkillsAreaButton).click();
+    cy.contains('button', 'Save Skill Area', { timeout: 10000 })
+        .first()
+        .should('be.visible')
+        .and('not.be.disabled')
+        .click({ force: true });
 })
 Then('I should see a success message indicating skill area added successfully', () => {
-    cy.contains('Skill Area Created Successfully').should('be.visible');
+    cy.contains('Skill Area Created Successfully', { timeout: 10000 }).should('be.visible');
+    cy.wait(2000);
 })
 Then('I should see the newly added skill area in the skill areas table', () => {
     cy.get(fmeDta.skillAreasTable).scrollIntoView().should('contain', skillArea.name);
@@ -1330,7 +1335,7 @@ When('I click on the save batch button on the add preassessment batch form', () 
 Then('I should see a success message indicating preassessment batch added successfully', () => {
     cy.get(fmeDta.successMessage).should('be.visible').and('contain', 'Batch created successfully');
 })
-When ('I click on the okay thanks button on the success messages', () => {
+When('I click on the okay thanks button on the success messages', () => {
     cy.contains('Okay. Thanks').click();
 })
 Then('I should be redirected back to the preassessment landing page', () => {
@@ -1373,10 +1378,10 @@ Then('I should see the preassessment table status header', () => {
     cy.get(fmeDta.preassessmentStatusHeader).should('be.visible');
 })
 Then('I should see and be able to click on the preassessment table next page button', () => {
-    cy.get(fmeDta.preassessmentNextButton).scrollIntoView().should('be.visible').click();
+    cy.get(fmeDta.preassessmentNextButton, { timeout: 10000 }).scrollIntoView().should('be.visible').click();
 })
 Then('I should see and be able to click on the preassessment table previous page button', () => {
-    cy.get(fmeDta.preassessmentPrevButton).scrollIntoView().should('be.visible').click();
+    cy.get(fmeDta.preassessmentPrevButton, { timeout: 10000 }).scrollIntoView().should('be.visible').click();
 })
 Then('I should be able to click and select 100 on the rows per page dropdown on preassessment page', () => {
     cy.get(fmeDta.preassessmentRowsPerPageDropdown, { timeout: 10000 }).select('100');

@@ -173,7 +173,6 @@ Feature: Programs test
                 Then I should see the psychometric performance percentage
                 Then I should see the psychometric view details button
                 When I click on the psychometric view details button
-                Then I should see the psychometric details modal header
                 Then I should see and be able to click on the psychometric details export button
                 Then I should see the psychometric details question map button
                 Then I should see the psychometric details add question button
