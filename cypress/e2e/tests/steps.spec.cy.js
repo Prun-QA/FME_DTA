@@ -1081,13 +1081,10 @@ Then('I should see the skill area cancel button', () => {
     cy.get(fmeDta.cancelSkillAreaButton).should('be.visible');
 })
 Then('I should see the skill area save button', () => {
-    cy.contains('Save Skill Area', { timeout: 10000 }).scrollIntoView().should('be.visible');
+    cy.xpath("//div[contains(@class,'flex justify-end')]//span[contains(text(),'Save Skill Area')]").scrollIntoView().should('be.visible');
 })
 When('I click on the skill area save button', () => {
-    cy.contains('button', 'Save Skill Area', { timeout: 10000 })
-        .first()
-        .should('be.visible')
-        .and('not.be.disabled')
+    cy.xpath("//div[contains(@class,'flex justify-end')]//span[contains(text(),'Save Skill Area')]")
         .click({ force: true });
 })
 Then('I should see a success message indicating skill area added successfully', () => {

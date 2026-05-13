@@ -12,6 +12,7 @@
     "@faker-js/faker": "^10.4.0",
     "cypress": "latest",
     "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
     "playwright-webkit": "latest"
   },
   "cypress-cucumber-preprocessor": {
