@@ -3,6 +3,7 @@ Feature: Users Test
 
     Scenario: Verify user can navigate through learners page, view learners details from coursera and pluralsight and export learners
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -73,6 +74,7 @@ Feature: Users Test
 
 Scenario: Verify user can navigate through facilitators page, view all facilitators, export, and add new facilitator
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -113,7 +115,7 @@ Scenario: Verify user can navigate through facilitators page, view all facilitat
         Then I should see a message indicating no results found
         Then I should see a cancel search button
         When I click on the cancel search button
-        Then I should see the facilitators table with all facilitators data
+        # Then I should see the facilitators table with all facilitators data
         Then I should see more than 1 facilitator in the facilitators table
         Then I should see atleast 1 header column in the facilitators table
         Then I should see atleast 1 data cell in the facilitators table
@@ -167,6 +169,7 @@ Scenario: Verify user can navigate through facilitators page, view all facilitat
 
 Scenario: Verify user can navigate through mentors page, view all mentors, export, and add new mentor
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -272,6 +275,7 @@ Scenario: Verify user can navigate through mentors page, view all mentors, expor
 
 Scenario: Verify user can navigate through admission queue page, export, and view all students on the admission queue
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button

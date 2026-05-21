@@ -1,6 +1,7 @@
 Feature: Operations test
     Scenario: Verify user can navigate through the session page, view all available session and export session
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -57,6 +58,7 @@ Feature: Operations test
    
    Scenario: Verify user can navigate through the audit log page, view all logs on the table, and export audit log page
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -102,6 +104,7 @@ Feature: Operations test
 
    Scenario: Verify user can navigate through the message page, view all message, view unread message, and group message
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button

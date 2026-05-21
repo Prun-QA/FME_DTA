@@ -400,7 +400,9 @@
     "mentorInviteSuccessMessageOkButton":"button[title='Okay, Thanks']",
     "uploadImageIcon":"button[class='flex items-center gap-2 px-4 py-2.5 text-sm cursor-pointer font-medium text-gray-700 border border-[#E5E7EB] rounded-lg hover:bg-gray-50 transition-colors']",
     "addAnInstitutionButton":"button[class='flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors rounded-t-lg'] span",
-    "trainingCenterSearchInput":"input[placeholder='Search...']"
+    "trainingCenterSearchInput":"input[placeholder='Search...']",
+    "acceptCookiesButton":"button[class='w-full py-3.5 px-6 bg-[#367A2B] hover:bg-[#2b6122] text-white font-medium rounded-xl transition-colors text-center text-sm md:text-base cursor-pointer']",
+    "saveSkillAreaContainer":".flex.items-center.justify-between.p-4.border-b.border-gray-200.bg-white"
     
 
 }

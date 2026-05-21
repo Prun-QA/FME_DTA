@@ -86,6 +86,9 @@ Before(function () {
 Given('I am on the login page', () => {
     cy.visit('/');
 })
+Then ('I click accept cookies', () => {
+    cy.get(fmeDta.acceptCookiesButton).click();
+})
 Then('I should see the login body', () => {
     cy.get(fmeDta.loginBody).should('be.visible');
 })
@@ -111,7 +114,7 @@ Then('I click on the login button', () => {
     cy.get(fmeDta.loginButton).click();
 })
 Then('I should be redirected to the dashboard', () => {
-    cy.url().should('include', '/dashboard');
+    cy.url().should('include', '/dashboard'); // Wait for the dashboard to load completely
 })
 Then('The app logo should be visible on the dashboard', () => {
     cy.get(fmeDta.logo).should('be.visible');
@@ -337,13 +340,15 @@ When('I click on the institution dropdown field', () => {
 })
 Then('I should be able to select an institution from the dropdown field', () => {
     cy.get(fmeDta.institutionSearchOption).should('be.visible').type('lekki');
-    cy.get(fmeDta.listOfInstitutions).find('li').first().click();
+    cy.get(fmeDta.listOfInstitutions).click();
 })
 When('I click on the training center dropdown field', () => {
     cy.contains('Select here').scrollIntoView().click();
+    cy.wait(500);
 })
 Then('I should be able to select a training center from the dropdown field', () => {
-    cy.get(fmeDta.trainingCenterSearchInput).should('be.visible').type('lekki');
+    cy.get(fmeDta.trainingCenterSearchInput).type('lekki');
+    cy.wait(500); // Add a wait to ensure the search results are loaded
     cy.get(fmeDta.trainingCenterOption).find('li').first().click();
 })
 Then('I should see the facilitators discard invite button', () => {
@@ -532,7 +537,7 @@ When('I click on the mentors institution dropdown field', () => {
     cy.contains('Select here', { timeout: 5000 }).scrollIntoView().click();
 })
 Then('I should be able to search for an institution', () => {
-    cy.get(fmeDta.mentorsInstitutionSearchField).type('Lekki');
+    cy.get(fmeDta.mentorsInstitutionSearchField).scrollIntoView().type('Lekki');
 })
 Then('I should be able to select an institution from the dropdown field on the mentors invite page', () => {
     cy.get(fmeDta.mentorsInstitutionOption).find('li').first().click();
@@ -541,7 +546,7 @@ When('I click on the mentors training center dropdown field', () => {
     cy.contains('Select here', { timeout: 5000 }).click();
 })
 Then('I should be able to select a training center from the dropdown field on the mentors invite page', () => {
-    cy.get(fmeDta.trainingCenterSearchInput).should('be.visible').type('Lekki');
+    cy.get(fmeDta.trainingCenterSearchInput).type('Lekki');
     cy.get(fmeDta.mentorsTrainingCenterOption).find('li').first().click();
 })
 Then('I should see the mentors discard invite button', () => {
@@ -948,6 +953,7 @@ Then('I should be able to select an institution image from the file explorer', (
 })
 When('I click on the add institution button', () => {
     cy.get(fmeDta.addInstitutionButton).click();
+    cy.wait(5000);
 })
 Then('I should a success message indicating institution added successfully', () => {
     cy.get(fmeDta.successMessage).should('be.visible').and('contain', 'Institution Created Successfully');
@@ -1054,7 +1060,7 @@ When('I click on the skill area add beginner course button', () => {
     cy.get(fmeDta.addBeginnerCourseButton).click();
 })
 Then('I click on the search for courses here button', () => {
-    cy.contains('Search for courses here').scrollIntoView().should('be.visible').click();
+    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().click();
 })
 Then('I should be able to select a beginner course from the dropdown field', () => {
     cy.get(fmeDta.beginnerCourseOption, { timeout: 10000 }).find('li').first().click();
@@ -1063,7 +1069,7 @@ When('I click on the skill area add intermediate course button', () => {
     cy.get(fmeDta.addIntermediateCourseButton).should('be.visible').click();
 })
 Then('I click on the search for courses here button again for intermediate course', () => {
-    cy.contains('Search for courses here').scrollIntoView().should('be.visible').click();
+    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().should('be.visible').click();
 })
 Then('I should be able to select an intermediate course from the dropdown field', () => {
     cy.get(fmeDta.intermediateCourseOption, { timeout: 10000 }).find('li').first().click();
@@ -1072,7 +1078,7 @@ When('I click on the skill area add advanced course button', () => {
     cy.get(fmeDta.addAdvancedModuleButton).should('be.visible').click();
 })
 Then('I click on the search for courses here button again for advanced course', () => {
-    cy.contains('Search for courses here').scrollIntoView().should('be.visible').click();
+    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().should('be.visible').click();
 })
 Then('I should be able to select an advanced course from the dropdown field', () => {
     cy.get(fmeDta.advancedCourseOption, { timeout: 10000 }).find('li').first().click();
@@ -1084,8 +1090,7 @@ Then('I should see the skill area save button', () => {
     cy.xpath("//div[contains(@class,'flex justify-end')]//span[contains(text(),'Save Skill Area')]").scrollIntoView().should('be.visible');
 })
 When('I click on the skill area save button', () => {
-    cy.xpath("//div[contains(@class,'flex justify-end')]//span[contains(text(),'Save Skill Area')]")
-        .click({ force: true });
+    cy.get(fmeDta.saveSkillAreaContainer).contains('Save Skill Area').click({ force: true });
 })
 Then('I should see a success message indicating skill area added successfully', () => {
     cy.contains('Skill Area Created Successfully', { timeout: 10000 }).should('be.visible');

@@ -3,6 +3,7 @@ Feature: Login Test
 
     Scenario: Verify user can successfully login with valid credentials
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
@@ -27,6 +28,7 @@ Feature: Login Test
 
     Scenario: Verify user cannot login succesfully with invalid credentials
         Given I am on the login page
+        Then I click accept cookies
         Then I should see the login body
         Then I should see a welcome message
         Then I should see the toggle password visibility button
