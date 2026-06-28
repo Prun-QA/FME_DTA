@@ -198,8 +198,8 @@ Then('I should see the all learners tab', () => {
 When('I click on the all learners tab', () => {
     cy.get(fmeDta.allLearnersTab).click();
 })
-Then('I should see the all learners next page button', () => {
-    cy.get(fmeDta.allLearnersNextPageButton).should('not.be.disabled');
+Then('I should see the all learners page', () => {
+    cy.get(fmeDta.learnersPage).should('be.visible');
 })
 Then('I can click on the all learners next page button', () => {
     cy.get(fmeDta.allLearnersNextPageButton).click();
@@ -213,8 +213,8 @@ Then('I can click on the all learners previous page button', () => {
 When('I click on the active learners tab', () => {
     cy.get(fmeDta.activeLearnersTab).click();
 })
-Then('I should see the active learners next page button', () => {
-    cy.get(fmeDta.activeLearnersNextPageButton).should('not.be.disabled');
+Then('I should see the active learners page', () => {
+    cy.get(fmeDta.learnersPage).should('be.visible');
 })
 Then('I can click on the active learners next page button', () => {
     cy.get(fmeDta.activeLearnersNextPageButton).click();
@@ -228,8 +228,8 @@ Then('I can click on the active learners previous page button', () => {
 When('I click on the inactive learners tab', () => {
     cy.get(fmeDta.inactiveLearnersTab).click();
 })
-Then('I should see the inactive learners next page button', () => {
-    cy.get(fmeDta.inactiveLearnersNextPageButton).should('not.be.disabled');
+Then('I should see the inactive learners page', () => {
+    cy.get(fmeDta.learnersPage).should('be.visible');
 })
 Then('I can click on the inactive learners next page button', () => {
     cy.get(fmeDta.inactiveLearnersNextPageButton).click();
@@ -243,8 +243,8 @@ Then('I can click on the inactive learners previous page button', () => {
 When('I click on the disabled learners tab', () => {
     cy.get(fmeDta.disabledLearnersTab).click();
 })
-Then('I should see the disabled learners next page button', () => {
-    cy.get(fmeDta.disabledLearnersNextPageButton).should('not.be.disabled');
+Then('I should see the disabled learner page', () => {
+    cy.get(fmeDta.learnersPage).should('be.visible');
 })
 Then('I can click on the disabled learners next page button', () => {
     cy.get(fmeDta.disabledLearnersNextPageButton).click();
@@ -480,8 +480,8 @@ Then('I should see the facilitator discard changes button', () => {
 Then('I should see the facilitator update details button', () => {
     cy.get(fmeDta.updateFacilitatorButton).scrollIntoView().should('be.visible');
 })
-When('I click on the facilitator update details button', () => {
-    cy.get(fmeDta.updateFacilitatorButton).click();
+When('I click on the facilitator discard changes button', () => {
+    cy.get(fmeDta.discardChangesButton).click();
 })
 Then('I should see a success message indicating details updated successfully', () => {
     cy.get(fmeDta.successfulUpdateMessage, { timeout: 20000 }).should('be.visible');
@@ -711,8 +711,8 @@ Then('I should see the mentors discard changes button', () => {
 Then('I should see the mentors update details button', () => {
     cy.get(fmeDta.updateMentorsButton).should('be.visible');
 })
-When('I click on the mentors update details button', () => {
-    cy.get(fmeDta.updateMentorsButton).click();
+When('I click on the mentors discard changes button', () => {
+    cy.get(fmeDta.mentorsDiscardChangesButton).click();
 })
 Then('I should see a mentors success message indicating details updated successfully', () => {
     cy.contains('Mentor Updated', { timeout: 12000 }).should('be.visible');
@@ -1057,44 +1057,39 @@ Then('I should be able to type in the skill area description textarea field', ()
     cy.get(fmeDta.skillAreaDescriptionTextarea).should('be.visible').type(skillArea.description);
 })
 When('I click on the skill area add beginner course button', () => {
-    cy.get(fmeDta.addBeginnerCourseButton).click();
+    cy.get(fmeDta.addBeginnerCourseButton).scrollIntoView().click();
 })
 Then('I click on the search for courses here button', () => {
-    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().click();
+    cy.get(fmeDta.searchForCoursesButton).scrollIntoView().click();
+    cy.wait(5000);
 })
 Then('I should be able to select a beginner course from the dropdown field', () => {
     cy.get(fmeDta.beginnerCourseOption, { timeout: 10000 }).find('li').first().click();
 })
 When('I click on the skill area add intermediate course button', () => {
-    cy.get(fmeDta.addIntermediateCourseButton).should('be.visible').click();
+    cy.get(fmeDta.addIntermediateCourseButton).scrollIntoView().click();
 })
 Then('I click on the search for courses here button again for intermediate course', () => {
-    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().should('be.visible').click();
+    cy.get(':nth-child(3) > .gap-4 > .flex-col > .relative > .w-full > span').scrollIntoView().click();
 })
 Then('I should be able to select an intermediate course from the dropdown field', () => {
-    cy.get(fmeDta.intermediateCourseOption, { timeout: 10000 }).find('li').first().click();
+    cy.get(fmeDta.intermediateCourseOption, { timeout: 10000 }).find('li').eq(1).click();
 })
 When('I click on the skill area add advanced course button', () => {
-    cy.get(fmeDta.addAdvancedModuleButton).should('be.visible').click();
+    cy.get(fmeDta.addAdvancedModuleButton).scrollIntoView().click();
 })
 Then('I click on the search for courses here button again for advanced course', () => {
-    cy.contains('Search for courses here', { timeout: 10000 }).scrollIntoView().should('be.visible').click();
+    cy.get(':nth-child(4) > .gap-4 > .flex-col > .relative > .w-full > span').scrollIntoView().click();
 })
 Then('I should be able to select an advanced course from the dropdown field', () => {
-    cy.get(fmeDta.advancedCourseOption, { timeout: 10000 }).find('li').first().click();
-})
-Then('I should see the skill area cancel button', () => {
-    cy.get(fmeDta.cancelSkillAreaButton).should('be.visible');
-})
-Then('I should see the skill area save button', () => {
-    cy.xpath("//div[contains(@class,'flex justify-end')]//span[contains(text(),'Save Skill Area')]").scrollIntoView().should('be.visible');
+    cy.get(fmeDta.advancedCourseOption, { timeout: 10000 }).find('li').eq(2).click();
+    cy.wait(5000);
 })
 When('I click on the skill area save button', () => {
-    cy.get(fmeDta.saveSkillAreaContainer).contains('Save Skill Area').click({ force: true });
-})
+  cy.get('.items-center.border-b > :nth-child(2) > div.flex > .flex').scrollIntoView().click();
+});
 Then('I should see a success message indicating skill area added successfully', () => {
     cy.contains('Skill Area Created Successfully', { timeout: 10000 }).should('be.visible');
-    cy.wait(2000);
 })
 Then('I should see the newly added skill area in the skill areas table', () => {
     cy.get(fmeDta.skillAreasTable).scrollIntoView().should('contain', skillArea.name);

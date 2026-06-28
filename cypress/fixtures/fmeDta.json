@@ -390,7 +390,7 @@
     "intermediateCourseOption": ".relative.z-50.top-full.left-0.w-full.bg-white.border.border-gray-300.rounded-md.mt-1.shadow-lg.max-h-60.overflow-auto",
     "advancedCourseOption": ".relative.z-50.top-full.left-0.w-full.bg-white.border.border-gray-300.rounded-md.mt-1.shadow-lg.max-h-60.overflow-auto",
     "skillAreaPlatformOption": ".absolute.z-50.mt-2.w-full.rounded-lg.border.border-gray-200.bg-white.shadow-lg",
-    "saveSkillsAreaButton":"div[class='flex items-center gap-2'] button[title='Save Skill Area'] span",
+    "saveSkillsAreaButton":"body > div:nth-child(16) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)",
     "sucessMessage":"body > div:nth-child(15) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)",
     "lekkiTrainingCenterOption":".relative.z-50.top-full.left-0.w-full.bg-white.border.border-gray-300.rounded-md.mt-1.shadow-lg.max-h-60.overflow-auto",
     "institutionSearchOption":"input[placeholder='Search...']",
@@ -402,7 +402,9 @@
     "addAnInstitutionButton":"button[class='flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors rounded-t-lg'] span",
     "trainingCenterSearchInput":"input[placeholder='Search...']",
     "acceptCookiesButton":"button[class='w-full py-3.5 px-6 bg-[#367A2B] hover:bg-[#2b6122] text-white font-medium rounded-xl transition-colors text-center text-sm md:text-base cursor-pointer']",
-    "saveSkillAreaContainer":".flex.items-center.justify-between.p-4.border-b.border-gray-200.bg-white"
+    "saveSkillAreaContainer":".flex.items-center.justify-between.p-4.border-b.border-gray-200.bg-white",
+    "searchForCoursesButton":"button[class='w-full text-left p-4 py-5 text-sm text-black bg-white rounded-lg border-0 focus:outline-none peer flex justify-between items-center '] span",
+    "learnersPage":".px-8.py-4.w-full"
     
 
 }

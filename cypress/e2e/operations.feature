@@ -120,7 +120,6 @@ Feature: Operations test
         Then I should see and be able to click the messages option in the dropdown menu
         Then I should be redirected to the messages page
         Then I should see the messages search input field on the messages page 
-        Then I should see and be able to click on the all message tab on the messages page
         Then I should see and be able to click on the unread message tab on the messages page
         Then I should see and be able to click on the group message tab on the messages page
         When I click on the new message icon

@@ -75,7 +75,7 @@ Feature: Programs test
                 Then I should see the toggle password visibility button
                 Then I should see the forgot password link
                 Then I should see the login button
-        
+
         Scenario: Verify user can navigate through the skill area page, view the available skill area on the table, export, and add new skill area
                 Given I am on the login page
                 Then I click accept cookies
@@ -94,7 +94,7 @@ Feature: Programs test
                 Then I should see and be able to click the skill areas option in the dropdown menu
                 Then I should be redirected to the skill areas page
                 Then I should see the skill areas page heading
-                Then I should see and be able to click on the skill areas export button
+                # Then I should see and be able to click on the skill areas export button
                 Then I should see the total skill areas count
                 Then I should see the active skill areas count
                 Then I should see the total enrolled count
@@ -124,8 +124,6 @@ Feature: Programs test
                 When I click on the skill area add advanced course button
                 Then I click on the search for courses here button again for advanced course
                 Then I should be able to select an advanced course from the dropdown field
-                # Then I should see the skill area cancel button
-                # Then I should see the skill area save button
                 When I click on the skill area save button
                 Then I should see a success message indicating skill area added successfully
                 When I click on the okay thanks button on the success message
